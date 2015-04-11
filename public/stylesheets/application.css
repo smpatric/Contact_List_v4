@@ -1,0 +1,41 @@
+.leftColumn {
+  width: 45%;
+  margin-left: 3%;
+  border: solid #dddddd 1px;
+  display: inline-block;
+  float: left;
+}
+
+.rightColumn {
+  width: 45%;
+  margin-right: 3%;
+  display: inline-block;
+  float: right;
+}
+
+.contactSearch {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+#editContactForm {
+  padding: 5%;
+}
+
+#contactInfo {
+  text-align: left;
+  vertical-align: center;
+  padding: 5%;
+}
+
+#manageContactButtons {
+  padding: 5%;
+  margin-top: -10%;
+  text-align: center;
+}
+
+

@@ -1,0 +1,121 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Contacts</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">View Contacts <span class="sr-only">(current)</span></a></li>
+        <li class="newContact"><a href="#">New Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- TABLE -->
+<div class="leftColumn">
+  <table class="table table-striped table-hover ">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody class="allContacts">
+    </tbody>
+  </table>
+</div>
+<!-- TABLE END-->
+<!-- CONTACT INFO -->
+<div class="panel panel-default rightColumn">
+  <div class="panel-heading">
+    <form role="search">
+      <div class="form-group">
+        <input type="text" class="contactSearch" id="searchInput" placeholder="Find Contact">
+      <button type="submit" class="contactSearch" id="searchButton">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div id="contactDisplay" class="hide">
+    <div id="contactInfo">
+      <p id="contactName"></p><hr>
+      <p id="contactEmail"></p><hr>
+      <p id="contactPhone"></p><hr>
+    </div>
+    <div id="manageContactButtons">
+      <button class="btn btn-primary" id="manageContact">Edit</button>
+      <button class="btn btn-primary" id="deleteContact">Delete</button>
+    </div>
+  </div>
+  <!-- EDIT CONTACT FORM -->
+  <form class="hide form-horizontal" id="editContactForm">
+    <fieldset>
+      <div class="form-group">
+        <label for="editFirstName" class="col-lg-2 control-label">First Name</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="editFirstName"
+          placeholder="First Name">
+        </div>
+        <label for="editLastName" class="col-lg-2 control-label">Last Name</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="editLastName" placeholder="Last Name">
+        </div>
+        <label for="editEmail" class="col-lg-2 control-label">Email</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="editEmail" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <button type="submit" id="editContactSubmit" class="btn btn-primary">Submit</button>
+          <button class="btn btn-primary" id="cancelEditContact">Cancel</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <!-- EDIT CONTACT FORM -->
+</div>
+<!-- CONTACT INFO END -->
+<!-- NEW CONTACT MODAL WITH FORM -->
+<div class="modal" id="newContactModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">New Contact</h4>
+      </div>
+    <div class="modal-body">
+      <!-- FORM -->
+      <form class="form-horizontal" id="newContactForm">
+        <fieldset>
+          <div class="form-group">
+            <label for="inputFirstName" class="col-lg-2 control-label">First Name</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+            </div>
+            <label for="inputLastName" class="col-lg-2 control-label">Last Name</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+            </div>
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+            <div class="col-lg-10">
+              <input type="phone" class="form-control" id="inputPhone" placeholder="Phone">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="submit" id="newContactSubmit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <!-- FORM -->
+    </div>
+  </div>
+</div>
+<!-- NEW CONTACT MODAL WITH FORM -->
+
